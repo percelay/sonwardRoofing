@@ -30,15 +30,15 @@ export default function Header() {
       }`}
     >
       <div className="mx-auto max-w-7xl px-4 lg:px-8">
-        <div className="flex h-16 items-center justify-between">
+        <div className="flex h-20 items-center justify-between">
 
           <Link href="/">
             <Image
               src="/sonwardMainLogo.png"
               alt="Sonward Construction LLC"
-              width={180}
-              height={48}
-              className="h-10 w-auto object-contain"
+              width={320}
+              height={90}
+              className="h-16 w-auto object-contain"
               priority
             />
           </Link>
