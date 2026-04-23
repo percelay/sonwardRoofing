@@ -5,38 +5,36 @@
   --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
   --font-serif: var(--font-cormorant), 'Cormorant Garamond', Georgia, serif;
 
-  /* ─── Architectural Slate / Charcoal ─────────────────────── */
-  --color-slate-950: #0D1117;
-  --color-slate-900: #171D26;
-  --color-slate-800: #222A36;
-  --color-slate-700: #2F3C4E;
-  --color-slate-600: #435063;
-  --color-slate-500: #5A6A7E;
-  --color-slate-400: #7A8EA6;
+  /* ─── Blacks / Darks ─────────────────────────────────────── */
+  --color-neutral-950: #0A0A0A;
+  --color-neutral-900: #111111;
+  --color-neutral-800: #1C1C1C;
+  --color-neutral-700: #2E2E2E;
+  --color-neutral-600: #444444;
+  --color-neutral-500: #5C5C5C;
+  --color-neutral-400: #787878;
+  --color-neutral-300: #A0A0A0;
+  --color-neutral-200: #D4D4D4;
+  --color-neutral-100: #F0F0F0;
+  --color-neutral-50:  #F7F7F7;
 
-  /* ─── Warm Surface / Parchment ───────────────────────────── */
-  --color-parchment-50:  #FAF9F7;
-  --color-parchment-100: #F4F2EE;
-  --color-parchment-200: #EAE6DF;
-  --color-parchment-300: #D5CFBE;
-  --color-parchment-400: #B8AF9B;
-
-  /* ─── Premium Gold Accent ────────────────────────────────── */
-  --color-gold-200: #EDD89A;
-  --color-gold-300: #E0C46B;
-  --color-gold-400: #CEAA44;
-  --color-gold-500: #B8942D;
-  --color-gold-600: #9A7A21;
-  --color-gold-700: #7D6019;
+  /* ─── Brand Red ───────────────────────────────────────────── */
+  --color-red-700: #8F0F0F;
+  --color-red-600: #B01414;
+  --color-red-500: #C41C1C;
+  --color-red-400: #E03030;
+  --color-red-300: #F06060;
+  --color-red-200: #FBBBBB;
+  --color-red-100: #FEE8E8;
 
   /* ─── Semantic Aliases ───────────────────────────────────── */
-  --color-background:    #F4F2EE;
-  --color-surface:       #FAF9F7;
-  --color-foreground:    #171D26;
-  --color-muted:         #5A6A7E;
-  --color-border:        #D5CFBE;
-  --color-accent:        #CEAA44;
-  --color-accent-hover:  #B8942D;
+  --color-background:   #F2F2F2;
+  --color-surface:      #FFFFFF;
+  --color-foreground:   #111111;
+  --color-muted:        #5C5C5C;
+  --color-border:       #D4D4D4;
+  --color-accent:       #C41C1C;
+  --color-accent-hover: #B01414;
 }
 
 @layer base {

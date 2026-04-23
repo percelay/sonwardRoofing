@@ -18,16 +18,19 @@ const inter = Inter({
 })
 
 export const metadata: Metadata = {
-  title: 'Sonward Roofing & Construction LLC | Oklahoma City',
+  title: 'Sonward Construction LLC | Roofing Experts Serving Greater Oklahoma City',
   description:
-    'Family-owned and operated for over 30 years. Specializing in luxury roofing, high-end materials, and unparalleled craftsmanship in Oklahoma City and surrounding areas.',
+    'Family-owned and locally operated roofing company serving Oklahoma City, Norman, Edmond, Yukon, Moore, Mustang, Tuttle, Kingfisher, and surrounding areas. Roofing, repairs, storm damage, insurance claims, gutters, siding, and more. Serving OKC since 1982.',
   keywords: [
     'roofing Oklahoma City',
-    'luxury roofing',
-    'tile roofing',
-    'slate roofing',
     'roof repair OKC',
-    'Sonward Roofing',
+    'storm damage roofing',
+    'insurance claim roofing',
+    'leak repair specialist',
+    'Sonward Construction',
+    'roofing Norman OK',
+    'roofing Edmond OK',
+    'family owned roofing Oklahoma',
   ],
 }
 

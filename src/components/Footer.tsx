@@ -1,5 +1,6 @@
+import Image from 'next/image'
 import Link from 'next/link'
-import { MapPin, Phone, Clock, ArrowUpRight } from 'lucide-react'
+import { MapPin, Phone, Mail, Clock, ShieldCheck } from 'lucide-react'
 
 const navLinks = [
   { label: 'About', href: '#about' },
@@ -9,97 +10,154 @@ const navLinks = [
   { label: 'Contact', href: '#contact' },
 ]
 
-const services = [
-  'Premium Roof Installation & Replacement',
-  'Expert Roof Repair & Maintenance',
-  'Storm Evaluations & Insurance Assistance',
+const serviceAreas = [
+  'Oklahoma City', 'Norman', 'Edmond', 'Yukon',
+  'Moore', 'Mustang', 'Tuttle', 'Kingfisher',
+]
+
+const credentials = [
+  'Fully Licensed & Insured',
+  'Locally & Family Owned',
+  '40+ Years of Experience',
+  'Free Inspections',
 ]
 
 export default function Footer() {
   return (
-    <footer id="contact" className="bg-slate-950">
+    <footer id="contact" className="bg-neutral-950">
 
       {/* Contact band */}
-      <div className="border-b border-slate-800">
+      <div className="border-b border-neutral-800">
         <div className="mx-auto max-w-7xl px-6 lg:px-10 py-16 lg:py-20">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20">
 
             {/* Left: CTA */}
             <div>
               <div className="flex items-center gap-3 mb-5">
-                <div className="h-px w-8 bg-gold-500" />
-                <span className="font-sans text-[10px] tracking-[0.3em] uppercase text-gold-500 font-medium">
+                <div className="h-px w-8 bg-red-500" />
+                <span className="font-sans text-[10px] tracking-[0.3em] uppercase text-red-400 font-medium">
                   Get in Touch
                 </span>
               </div>
-              <h2 className="font-serif text-4xl lg:text-5xl font-light text-white mb-6 leading-tight">
-                Ready to Protect{' '}
-                <em className="italic text-gold-300">Your Investment?</em>
+              <h2 className="font-serif text-4xl lg:text-5xl font-light text-white mb-4 leading-tight">
+                Ready to Get Started?
               </h2>
-              <p className="font-sans font-light text-slate-400 text-sm leading-relaxed mb-8 max-w-sm">
-                Contact us today for a free consultation. We&apos;re prompt, professional, and dedicated to your satisfaction.
+              <p className="font-sans font-light text-neutral-400 text-sm leading-relaxed mb-8 max-w-sm">
+                Call us or send an email for a free estimate. We&apos;re a local Oklahoma company — prompt, professional, and standing behind our work.
               </p>
-              <a
-                href="tel:4058434448"
-                className="inline-flex items-center gap-3 bg-gold-500 hover:bg-gold-400 text-slate-900 font-sans text-xs font-medium tracking-[0.18em] uppercase px-8 py-4 transition-all duration-300"
-              >
-                <Phone size={14} strokeWidth={2} />
-                Call (405) 843-4448
-              </a>
-            </div>
 
-            {/* Right: Contact details */}
-            <div className="grid grid-cols-1 sm:grid-cols-3 gap-8">
-              <div className="flex flex-col gap-3">
-                <div className="flex items-center gap-2 text-gold-500 mb-1">
-                  <MapPin size={14} strokeWidth={1.5} />
-                  <span className="font-sans text-[10px] tracking-[0.25em] uppercase font-medium">Address</span>
-                </div>
-                <p className="font-sans font-light text-slate-300 text-sm leading-relaxed">
-                  3333 NW 63rd St.<br />
-                  Oklahoma City, OK 73116
-                </p>
+              {/* Credentials */}
+              <div className="grid grid-cols-2 gap-2 mb-8">
+                {credentials.map((c) => (
+                  <div key={c} className="flex items-center gap-2">
+                    <ShieldCheck size={12} strokeWidth={1.5} className="text-red-500 shrink-0" />
+                    <span className="font-sans text-xs font-light text-neutral-400">{c}</span>
+                  </div>
+                ))}
               </div>
 
-              <div className="flex flex-col gap-3">
-                <div className="flex items-center gap-2 text-gold-500 mb-1">
-                  <Phone size={14} strokeWidth={1.5} />
-                  <span className="font-sans text-[10px] tracking-[0.25em] uppercase font-medium">Phone</span>
-                </div>
+              <div className="flex flex-wrap gap-3">
                 <a
                   href="tel:4058434448"
-                  className="font-sans font-light text-slate-300 text-sm hover:text-gold-400 transition-colors duration-300"
+                  className="flex items-center gap-2 bg-red-500 hover:bg-red-600 text-white font-sans text-xs font-medium tracking-[0.16em] uppercase px-6 py-3.5 transition-all duration-300"
                 >
+                  <Phone size={13} strokeWidth={2} />
                   (405) 843-4448
                 </a>
+                <a
+                  href="mailto:info@sonwardconstruction.com"
+                  className="flex items-center gap-2 border border-neutral-600 hover:border-neutral-400 text-neutral-300 hover:text-white font-sans text-xs font-light tracking-[0.16em] uppercase px-6 py-3.5 transition-all duration-300"
+                >
+                  <Mail size={13} strokeWidth={1.5} />
+                  Email Us
+                </a>
+              </div>
+            </div>
+
+            {/* Right: contact details + areas */}
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-10">
+              <div className="flex flex-col gap-8">
+                <div>
+                  <div className="flex items-center gap-2 text-red-500 mb-3">
+                    <MapPin size={13} strokeWidth={1.5} />
+                    <span className="font-sans text-[10px] tracking-[0.25em] uppercase font-medium">Address</span>
+                  </div>
+                  <p className="font-sans font-light text-neutral-300 text-sm leading-relaxed">
+                    3333 NW 63rd St.<br />
+                    Oklahoma City, OK 73116
+                  </p>
+                </div>
+
+                <div>
+                  <div className="flex items-center gap-2 text-red-500 mb-3">
+                    <Phone size={13} strokeWidth={1.5} />
+                    <span className="font-sans text-[10px] tracking-[0.25em] uppercase font-medium">Phone</span>
+                  </div>
+                  <a
+                    href="tel:4058434448"
+                    className="font-sans font-light text-neutral-300 text-sm hover:text-red-400 transition-colors duration-300"
+                  >
+                    (405) 843-4448
+                  </a>
+                </div>
+
+                <div>
+                  <div className="flex items-center gap-2 text-red-500 mb-3">
+                    <Mail size={13} strokeWidth={1.5} />
+                    <span className="font-sans text-[10px] tracking-[0.25em] uppercase font-medium">Email</span>
+                  </div>
+                  <a
+                    href="mailto:info@sonwardconstruction.com"
+                    className="font-sans font-light text-neutral-300 text-sm hover:text-red-400 transition-colors duration-300 break-all"
+                  >
+                    info@sonwardconstruction.com
+                  </a>
+                </div>
+
+                <div>
+                  <div className="flex items-center gap-2 text-red-500 mb-3">
+                    <Clock size={13} strokeWidth={1.5} />
+                    <span className="font-sans text-[10px] tracking-[0.25em] uppercase font-medium">Service</span>
+                  </div>
+                  <p className="font-sans font-light text-neutral-300 text-sm">
+                    Prompt service, prompt scheduling
+                  </p>
+                </div>
               </div>
 
-              <div className="flex flex-col gap-3">
-                <div className="flex items-center gap-2 text-gold-500 mb-1">
-                  <Clock size={14} strokeWidth={1.5} />
-                  <span className="font-sans text-[10px] tracking-[0.25em] uppercase font-medium">Service</span>
+              <div>
+                <div className="font-sans text-[10px] tracking-[0.25em] uppercase text-red-500 font-medium mb-3">
+                  Areas We Serve
                 </div>
-                <p className="font-sans font-light text-slate-300 text-sm leading-relaxed">
-                  Prompt service,<br />prompt scheduling
-                </p>
+                <ul className="flex flex-col gap-1.5">
+                  {serviceAreas.map((area) => (
+                    <li key={area} className="font-sans font-light text-neutral-400 text-sm">
+                      {area}
+                    </li>
+                  ))}
+                  <li className="font-sans font-light text-neutral-600 text-xs italic mt-1">
+                    &amp; surrounding areas
+                  </li>
+                </ul>
               </div>
             </div>
           </div>
         </div>
       </div>
 
-      {/* Bottom nav strip */}
-      <div className="mx-auto max-w-7xl px-6 lg:px-10 py-10">
-        <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-8">
+      {/* Bottom strip */}
+      <div className="mx-auto max-w-7xl px-6 lg:px-10 py-8">
+        <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
 
           {/* Logo */}
-          <Link href="/" className="flex flex-col leading-none">
-            <span className="font-serif text-xl font-light tracking-[0.2em] text-white">
-              SONWARD
-            </span>
-            <span className="font-sans text-[9px] font-light tracking-[0.28em] text-gold-500 uppercase mt-0.5">
-              Roofing &amp; Construction
-            </span>
+          <Link href="/">
+            <Image
+              src="/sonwardMainLogo.png"
+              alt="Sonward Construction LLC"
+              width={160}
+              height={44}
+              className="h-10 w-auto object-contain opacity-70 hover:opacity-100 transition-opacity duration-300"
+            />
           </Link>
 
           {/* Nav */}
@@ -108,30 +166,21 @@ export default function Footer() {
               <a
                 key={link.href}
                 href={link.href}
-                className="font-sans text-[11px] font-light tracking-[0.16em] uppercase text-slate-500 hover:text-gold-400 transition-colors duration-300"
+                className="font-sans text-[11px] font-light tracking-[0.16em] uppercase text-neutral-600 hover:text-neutral-300 transition-colors duration-300"
               >
                 {link.label}
               </a>
             ))}
           </nav>
-
-          {/* Services list */}
-          <div className="hidden xl:flex flex-col gap-1.5">
-            {services.map((s) => (
-              <span key={s} className="font-sans text-[11px] font-light text-slate-600">
-                {s}
-              </span>
-            ))}
-          </div>
         </div>
 
-        {/* Legal line */}
-        <div className="mt-8 pt-6 border-t border-slate-800/60 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3">
-          <p className="font-sans text-[11px] font-light text-slate-600">
-            &copy; {new Date().getFullYear()} Sonward Roofing &amp; Construction LLC. All rights reserved.
+        {/* Legal */}
+        <div className="mt-6 pt-5 border-t border-neutral-800/70 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-2">
+          <p className="font-sans text-[11px] font-light text-neutral-700">
+            &copy; {new Date().getFullYear()} Sonward Construction LLC. All rights reserved.
           </p>
-          <p className="font-sans text-[11px] font-light text-slate-700">
-            Oklahoma City, OK &middot; Fully Insured &amp; Certified
+          <p className="font-sans text-[11px] font-light text-neutral-700">
+            Oklahoma City, OK &middot; Fully Licensed &amp; Insured &middot; Serving OKC Since 1982
           </p>
         </div>
       </div>
