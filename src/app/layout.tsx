@@ -1,12 +1,11 @@
 import type { Metadata } from 'next'
-import { Cormorant_Garamond, Inter } from 'next/font/google'
+import { Barlow, Inter } from 'next/font/google'
 import '@/styles/globals.css'
 
-const cormorant = Cormorant_Garamond({
-  variable: '--font-cormorant',
+const barlow = Barlow({
+  variable: '--font-barlow',
   subsets: ['latin'],
-  weight: ['300', '400', '500', '600', '700'],
-  style: ['normal', 'italic'],
+  weight: ['600', '700', '800'],
   display: 'swap',
 })
 
@@ -40,7 +39,7 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en" className={`${cormorant.variable} ${inter.variable}`}>
+    <html lang="en" className={`${barlow.variable} ${inter.variable}`}>
       <body>{children}</body>
     </html>
   )

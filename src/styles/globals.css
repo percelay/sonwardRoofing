@@ -2,8 +2,8 @@
 
 @theme {
   /* ─── Typography ─────────────────────────────────────────── */
-  --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
-  --font-serif: var(--font-cormorant), 'Cormorant Garamond', Georgia, serif;
+  --font-sans:    var(--font-inter),   ui-sans-serif, system-ui, sans-serif;
+  --font-heading: var(--font-barlow),  'Barlow', ui-sans-serif, sans-serif;
 
   /* ─── Blacks / Darks ─────────────────────────────────────── */
   --color-neutral-950: #0A0A0A;
@@ -24,10 +24,9 @@
   --color-red-500: #C41C1C;
   --color-red-400: #E03030;
   --color-red-300: #F06060;
-  --color-red-200: #FBBBBB;
   --color-red-100: #FEE8E8;
 
-  /* ─── Semantic Aliases ───────────────────────────────────── */
+  /* ─── Semantic ────────────────────────────────────────────── */
   --color-background:   #F2F2F2;
   --color-surface:      #FFFFFF;
   --color-foreground:   #111111;
@@ -56,13 +55,8 @@
   }
 
   h1, h2, h3, h4, h5, h6 {
-    font-family: var(--font-serif);
-    line-height: 1.15;
-    font-weight: 400;
-  }
-
-  img {
-    max-width: 100%;
-    height: auto;
+    font-family: var(--font-heading);
+    font-weight: 700;
+    line-height: 1.1;
   }
 }
