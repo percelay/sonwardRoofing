@@ -26,10 +26,16 @@ export default function About() {
             </h2>
 
             <p className="font-sans text-neutral-600 text-base leading-relaxed mb-6">
-              Founded in 1982, Sonward Construction LLC brings over three decades of
-              experience to the Oklahoma City metro and surrounding areas. As a fully
-              licensed, insured, and certified, family-owned and locally operated
-              business, customer service is our number one priority.
+              With four decades of experience in the Oklahoma City metro, we have become
+              a trusted partner for some of the region&apos;s premier luxury home builders.
+              We understand that a high-end custom build requires more than just a standard
+              roof; it demands meticulous craftsmanship, architectural precision, and a
+              seamless integration with complex designs. By collaborating closely with
+              elite builders from the initial planning stages through final inspection,
+              we ensure that every custom residence is crowned with a roofing system that
+              is as durable as it is visually stunning. Our commitment to quality and our
+              deep understanding of luxury materials make us the first choice for
+              homeowners and builders who refuse to compromise on excellence.
             </p>
 
             <p className="font-sans text-neutral-600 text-base leading-relaxed mb-6">
