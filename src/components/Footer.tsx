@@ -55,7 +55,7 @@ export default function Footer() {
                   (405) 843-4448
                 </a>
                 <a
-                  href="mailto:info@sonwardconstruction.com"
+                  href="mailto:sonward@sbcglobal.net"
                   className="flex items-center gap-2 border border-neutral-600 hover:border-neutral-400 text-neutral-300 hover:text-white font-sans text-sm px-5 py-3 transition-colors duration-200"
                 >
                   <Mail size={13} />
@@ -90,8 +90,8 @@ export default function Footer() {
                     <Mail size={13} />
                     <span className="font-heading font-bold text-xs uppercase tracking-wider">Email</span>
                   </div>
-                  <a href="mailto:info@sonwardconstruction.com" className="font-sans text-sm text-neutral-300 hover:text-red-400 transition-colors duration-200 break-all">
-                    info@sonwardconstruction.com
+                  <a href="mailto:sonward@sbcglobal.net" className="font-sans text-sm text-neutral-300 hover:text-red-400 transition-colors duration-200 break-all">
+                    sonward@sbcglobal.net
                   </a>
                 </div>
                 <div>
